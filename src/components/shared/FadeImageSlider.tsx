@@ -18,7 +18,7 @@ function FadeImageSlider({ slides }: FadeImageSliderProps) {
     }, [emblaApi])
 
     return (
-        <div className="embla h-[50dvh] md:min-h-[100dvh] w-full absolute">
+        <div className="embla min-h-[50svh] md:min-h-[100svh] w-full absolute">
             <div className="embla__viewport h-full" ref={emblaRef}>
                 <div className="embla__container h-full">
                     {slides.map((slide) => (
