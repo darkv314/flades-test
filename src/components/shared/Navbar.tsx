@@ -7,7 +7,7 @@ import { Button } from "@nextui-org/react";
 import { IconoirProvider, Menu, Xmark } from "iconoir-react";
 
 function Navbar() {
-    const [isScrolled, setIsScrolled] = useState(false);
+    const [_, setIsScrolled] = useState(false);
     const [menuOpen, setMenuOpen] = useState(false)
 
     useEffect(() => {
