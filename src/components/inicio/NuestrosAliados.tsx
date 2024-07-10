@@ -16,12 +16,12 @@ function NuestrosAliados() {
                     className="flex animate-infinite-scroll items-center justify-center md:justify-start [&_img]:max-w-none [&_li]:mx-8"
                     aria-hidden={index > 0}
                 >
-                    {brands.map((it) => (
-                        <li key={it.src}>
+                    {brands.map((brand) => (
+                        <li key={brand.src}>
                             <img
-                                src={it.src}
-                                alt={it.name}
-                                className="max-h-10 dark:invert"
+                                src={brand.src}
+                                alt={brand.name}
+                                className="max-h-10 md:max-h-14 dark:invert"
                             />
                         </li>
                     ))}
