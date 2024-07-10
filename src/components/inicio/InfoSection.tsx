@@ -17,7 +17,7 @@ export type InfoSectionProps = {
 
 function InfoSection({ index, slider = false, imgSrc, imgTitle, gallery = [], title, description, button = true, customContent }: InfoSectionProps) {
     return (
-        <section className="min-h-[50svh] md:min-h-[100svh] w-full relative">
+        <section className="min-h-[50svh] md:min-h-[100svh] w-full relative flex">
             {
                 slider ? <FadeImageSlider slides={gallery} /> :
                     <img className="size-full absolute object-cover" src={imgSrc} alt={imgTitle} />
