@@ -1,5 +1,5 @@
 import { Button } from "@nextui-org/react"
-import { ReactNode } from "@tanstack/react-router";
+import { Link, ReactNode } from "@tanstack/react-router";
 import clsx from "clsx";
 import FadeImageSlider from "../shared/FadeImageSlider";
 import useLanguage from "../../hooks/useLanguage";
@@ -14,9 +14,10 @@ export type InfoSectionProps = {
     description: { en: string, es: string }
     button?: boolean;
     customContent?: ReactNode
+    link?: string;
 }
 
-function InfoSection({ index, slider = false, imgSrc, imgTitle, gallery = [], title, description, button = true, customContent }: InfoSectionProps) {
+function InfoSection({ index, slider = false, imgSrc, imgTitle, gallery = [], title, description, button = true, customContent, link = "" }: InfoSectionProps) {
     const { language } = useLanguage();
     return (
         <section className="min-h-[50svh] md:min-h-[100svh] w-full relative flex">
@@ -33,9 +34,11 @@ function InfoSection({ index, slider = false, imgSrc, imgTitle, gallery = [], ti
                     <p className="text-xl text-pretty">
                         {description[language]}
                     </p>
-                    {button && <Button className="bg-[#61CE70]">
-                        Leer más
-                    </Button>}
+                    {button &&
+                        <Link className="w-full bg-[#61CE70] p-2 rounded-2xl grid place-items-center text-black font" to={link}>
+                            {language === "es" ? "Leer más" : "Read more"}
+                        </Link>
+                    }
                     {customContent}
                 </section>
 

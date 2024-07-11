@@ -33,7 +33,7 @@ function Navbar() {
                 </Link>
                 <ul className="gap-4 hidden md:flex items-center">
                     {navTitles.map((link) => (
-                        <li className="capitalize hover:underline text-[#35ad35] font-semibold font-" key={link.to}>
+                        <li className="capitalize hover:underline text-[#35ad35] font-semibold text-center" key={link.to}>
                             <Link to={link.to}>{link.title[language]}</Link>
                         </li>
                     ))}
@@ -91,8 +91,8 @@ function NavMenu({ setMenuOpen }: NavMenuProps) {
                 <div className='w-full bg-white h-[1px]'></div>
                 <ul className='gap-4 flex flex-col items-center'>
                     {navTitles.map((link) => (
-                        <li>
-                            <Link onClick={() => setMenuOpen(false)} key={link.to} className='hover:underline flex gap-1 items-center capitalize text-white' to={link.to}>
+                        <li key={link.to}>
+                            <Link onClick={() => setMenuOpen(false)} className='hover:underline flex gap-1 items-center capitalize text-white' to={link.to}>
                                 {link.title[language]}
                             </Link>
                         </li>
@@ -125,7 +125,7 @@ function SelectLanguage({ width = '150px' }: SelectLanguageProps) {
     };
 
     return (
-        <Autocomplete isClearable={false} defaultItems={languages} selectedKey={language} onSelectionChange={handleSelectionChange} className={`w-[${width}]`} label="Idioma" placeholder="Selecciona un lenguaje">
+        <Autocomplete isClearable={false} defaultItems={languages} selectedKey={language} onSelectionChange={handleSelectionChange} className={`w-[${width}]`} label={language === 'en' ? "Language" : "Idioma"} placeholder="Selecciona un lenguaje">
             {
                 (language) => <AutocompleteItem key={language.value} value={language.value} textValue={language.label}>
                     <div className="flex gap-2 items-center">

@@ -121,6 +121,7 @@ export const infoSections: InfoSectionProps[] = [
                 alt: "Inicio 5",
             },
         ],
+        link: "/",
     },
     {
         index: 1,
@@ -136,7 +137,8 @@ export const infoSections: InfoSectionProps[] = [
         description: {
             en: "Together for a more self-sustainable Bolivia",
             es: "Juntos por una Bolivia más autosostenible",
-        }
+        },
+        link: "/nosotros",
     },
     {
         index: 2,
@@ -153,6 +155,7 @@ export const infoSections: InfoSectionProps[] = [
             en: "Empowering Bolivians",
             es: "Empoderando a los bolivianos"
         },
+        link: "/proyectos",
     },
     {
         index: 3,
@@ -170,6 +173,7 @@ export const infoSections: InfoSectionProps[] = [
             en: "Don't let the jungle run out of music",
             es: "Que la selva no se quede sin música"
         },
+        link: "/chiquitania",
     },
     {
         index: 4,
@@ -185,8 +189,8 @@ export const infoSections: InfoSectionProps[] = [
         description: {
             en: "Transparency in our activities and resource management is a fundamental pillar to continue growing and supporting more people in need",
             es: "La transparencia en nuestras actividades y manejo de recursos es un pilar fundamental para continuar creciendo y apoyar cada vez a más personas que necesiten ayuda",
-        }
-
+        },
+        link: "/compliance",
     },
     {
         index: 5,

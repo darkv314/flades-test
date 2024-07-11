@@ -28,17 +28,17 @@ export let navTitles = navLinks.map((link) => {
 
 navTitles = [
     {
+        to: "/nosotros",
+        title: {
+            es: "nosotros",
+            en: "about us",
+        },
+    },
+    {
         to: "/proyectos",
         title: {
             es: "proyectos",
             en: "projects",
-        },
-    },
-    {
-        to: "/compliance",
-        title: {
-            es: "cumplimiento",
-            en: "compliance",
         },
     },
     {
@@ -49,10 +49,10 @@ navTitles = [
         },
     },
     {
-        to: "/nosotros",
+        to: "/compliance",
         title: {
-            es: "nosotros",
-            en: "about us",
+            es: "cumplimiento",
+            en: "compliance",
         },
     },
 ];
