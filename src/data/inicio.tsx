@@ -79,6 +79,11 @@ const redesSociales = [
     },
 ];
 
+export const ourAlliesTitle = {
+    en: "Our Allies",
+    es: "Nuestros Aliados",
+};
+
 //Avoid using same titles for different sections
 export const infoSections: InfoSectionProps[] = [
     {
