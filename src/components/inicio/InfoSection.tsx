@@ -1,4 +1,3 @@
-import { Button } from "@nextui-org/react"
 import { Link, ReactNode } from "@tanstack/react-router";
 import clsx from "clsx";
 import FadeImageSlider from "../shared/FadeImageSlider";
