@@ -5,6 +5,7 @@ import './embla.css'
 import { RouterProvider, createRouter } from '@tanstack/react-router'
 import { routeTree } from './routeTree.gen'
 import { NextUIProvider } from '@nextui-org/react'
+import { LanguageProvider } from './context/LanguageProvider'
 
 const router = createRouter({ routeTree })
 
@@ -17,7 +18,9 @@ declare module '@tanstack/react-router' {
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
     <NextUIProvider>
-      <RouterProvider router={router} />
+      <LanguageProvider>
+        <RouterProvider router={router} />
+      </LanguageProvider>
     </NextUIProvider>
   </React.StrictMode>,
 )
