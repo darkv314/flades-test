@@ -83,9 +83,15 @@ const redesSociales = [
 export const infoSections: InfoSectionProps[] = [
     {
         index: 0,
-        title: "Inicio",
+        title: {
+            en: "Home",
+            es: "Inicio"
+        },
         description:
-            "Trabajamos para empoderar áreas vulnerables, buscando la autosostenibilidad en Bolivia",
+        {
+            en: "We work to empower vulnerable areas, seeking self-sustainability in Bolivia",
+            es: "Trabajamos para empoderar áreas vulnerables, buscando la autosostenibilidad en Bolivia"
+        },
         button: false,
         slider: true,
         gallery: [
@@ -114,39 +120,84 @@ export const infoSections: InfoSectionProps[] = [
     {
         index: 1,
         imgSrc: nosotros,
-        imgTitle: "Nosotros",
-        title: "Nosotros",
-        description: "Juntos por una Bolivia más autosostenible",
+        imgTitle: {
+            en: "About Us",
+            es: "Nosotros",
+        },
+        title: {
+            en: "About Us",
+            es: "Nosotros",
+        },
+        description: {
+            en: "Together for a more self-sustainable Bolivia",
+            es: "Juntos por una Bolivia más autosostenible",
+        }
     },
     {
         index: 2,
         imgSrc: "https://fundacionflades.org/wp-content/uploads/2022/05/1H5A4485_edited.jpg",
-        imgTitle: "Proyectos",
-        title: "Proyectos",
-        description: "Empoderando a los bolivianos",
+        imgTitle: {
+            en: "Projects",
+            es: "Proyectos",
+        },
+        title: {
+            en: "Projects",
+            es: "Proyectos",
+        },
+        description: {
+            en: "Empowering Bolivians",
+            es: "Empoderando a los bolivianos"
+        },
     },
     {
         index: 3,
         imgSrc: "https://fundacionflades.org/wp-content/uploads/2022/05/DJI_0604_edited-1.jpg",
-        imgTitle: "Chiquitanía",
-        title: "Chiquitanía",
-        description: "Que la selva no se quede sin música",
+        imgTitle: {
+            en: "Chiquitanía",
+            es: "Chiquitanía",
+        },
+        title: {
+            en: "Chiquitanía",
+            es: "Chiquitanía",
+        },
+        description:
+        {
+            en: "Don't let the jungle run out of music",
+            es: "Que la selva no se quede sin música"
+        },
     },
     {
         index: 4,
         imgSrc: "https://fundacionflades.org/wp-content/uploads/2022/05/2.jpg",
-        imgTitle: "Cumplimiento",
-        title: "Cumplimiento",
-        description:
-            "La transparencia en nuestras actividades y manejo de recursos es un pilar fundamental para continuar creciendo y apoyar cada vez a más personas que necesiten ayuda",
+        imgTitle: {
+            en: "Compliance",
+            es: "Cumplimiento",
+        },
+        title: {
+            en: "Compliance",
+            es: "Cumplimiento",
+        },
+        description: {
+            en: "Transparency in our activities and resource management is a fundamental pillar to continue growing and supporting more people in need",
+            es: "La transparencia en nuestras actividades y manejo de recursos es un pilar fundamental para continuar creciendo y apoyar cada vez a más personas que necesiten ayuda",
+        }
+
     },
     {
         index: 5,
         imgSrc: "https://fundacionflades.org/wp-content/uploads/2022/05/Untitled-1-1.jpg",
-        imgTitle: "Contacto",
-        title: "Contacto",
-        description:
-            "Nuestra dirección Calle Quenallata Nº 10, entre 14 y 15 de Achumani. La Paz, Bolivia",
+        imgTitle: {
+            en: "Contact",
+            es: "Contacto",
+        },
+        title: {
+            en: "Contact",
+            es: "Contacto",
+        },
+        description: {
+            en: "Our address Calle Quenallata Nº 10, between 14 and 15 of Achumani. La Paz, Bolivia",
+            es: "Nuestra dirección Calle Quenallata Nº 10, entre 14 y 15 de Achumani. La Paz, Bolivia",
+        },
         button: false,
         customContent: (
             <div className="flex flex-col gap-4">
