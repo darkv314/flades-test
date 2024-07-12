@@ -19,7 +19,10 @@ export const nosotrosContent = {
         },
     },
     slogan: {
-        title: "Flades",
+        title: {
+            en: "Flades",
+            es: "Flades"
+        },
         content: {
             es: "Juntos por una Bolivia autosustentable.",
             en: "Together for a self-sustaining Bolivia."
