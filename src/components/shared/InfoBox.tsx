@@ -47,7 +47,7 @@ function InfoContent({ items, title, icon }: InfoContentProps) {
     const { language } = useLanguage();
     return (
         <>
-            <h2 className='text-4xl font-bold text-center'>{title}</h2>
+            <h2 className='text-2xl sm:text-4xl font-bold text-center'>{title}</h2>
             <ul className='list-none list-inside grid grid-cols-1 sm:grid-cols-2 gap-4 w-full'>
                 {items.map((item, index) => (
                     <li key={index} className='text-pretty grid grid-cols-[auto_1fr] gap-4'>
