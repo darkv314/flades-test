@@ -1,4 +1,3 @@
-import { color } from "framer-motion"
 import compliance from "../assets/compliance/compliance.jpg"
 import compliance2 from "../assets/compliance/compliance2.jpg"
 
