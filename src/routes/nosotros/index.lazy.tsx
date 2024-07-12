@@ -19,10 +19,10 @@ function Nosotros() {
     <div className='flex flex-col gap-10 pb-10'>
       <PageBanner slides={nosotrosSlider} content={slogan.content[language]} title={slogan.title[language]}>
         <section className='flex flex-col max-w-[60ch] items-center gap-4'>
-          <h2 className='text-4xl font-bold'>
+          <h2 className='text-2xl md:text-4xl font-bold'>
             {title[language]}
           </h2>
-          <p className='text-center text-xl'>
+          <p className='text-center text-md md:text-xl'>
             {title.content.description[language]}
           </p>
         </section>
