@@ -1,12 +1,14 @@
 import useEmblaCarousel from "embla-carousel-react"
 import Fade from 'embla-carousel-fade'
 import { useEffect } from "react"
+import clsx from "clsx"
 
 type FadeImageSliderProps = {
     slides: { src: string, alt: string }[]
+    height?: number
 }
 
-function FadeImageSlider({ slides }: FadeImageSliderProps) {
+function FadeImageSlider({ slides, height = 100 }: FadeImageSliderProps) {
     const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true, duration: 30 }, [Fade()])
 
     useEffect(() => {
@@ -18,7 +20,7 @@ function FadeImageSlider({ slides }: FadeImageSliderProps) {
     }, [emblaApi])
 
     return (
-        <div className="embla h-[50svh] md:min-h-[100svh] w-full absolute">
+        <div className={clsx(`embla h-[50svh] md:min-h-[${height}svh] w-full absolute`)}>
             <div className="embla__viewport h-full" ref={emblaRef}>
                 <div className="embla__container h-full">
                     {slides.map((slide) => (

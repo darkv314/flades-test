@@ -11,6 +11,9 @@ const config: Config = {
     ],
     theme: {
         extend: {
+            colors: {
+                blur: "#0000004d",
+            },
             fontFamily: {
                 poppins: ["Poppins", "sans-serif"],
             },
