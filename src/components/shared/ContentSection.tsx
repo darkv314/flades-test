@@ -20,11 +20,11 @@ function ContentSection({ title, contents, start, color = "white", wave = false 
         }} className={clsx('flex flex-col gap-8 items-center relative py-20', color !== "white" && "text-white")}>
             {title && <h2 className="text-4xl font-bold text-center">{title}</h2>}
             {contents.map((content, index) => (
-                <section key={`section-${content.title}`} className={clsx(((index + start) % 2) !== 0 && "lg:flex-row-reverse", `p-4 flex flex-col-reverse lg:flex-row items-center gap-8 lg:gap-16 justify-center`)}>
+                <section key={`section-${content.title}`} className={clsx(((index + start) % 2) !== 0 && "lg:flex-row-reverse", `p-4 flex flex-col lg:flex-row items-center gap-8 lg:gap-16 justify-center`)}>
                     <section className='flex gap-8 p-4 max-w-[55ch] md:max-w-[75ch] lg:max-w-[60ch]'>
                         <div className='flex flex-col gap-4'>
                             <h3 className='text-4xl font-bold'>{content.title}</h3>
-                            <p className='text-xl leading-8 max-h-[400px] overflow-y-auto'>{content.content}</p>
+                            <p className='px-1 text-xl leading-8 max-h-[400px] overflow-y-auto'>{content.content}</p>
                         </div>
                     </section>
                     <img className='h-[500px] rounded-lg w-[90%] md:w-[80%] lg:w-[40%] object-cover' src={content.imgSrc} alt={content.imgAlt} />
