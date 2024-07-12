@@ -10,7 +10,7 @@ export const Route = createLazyFileRoute('/chiquitania/')({
 })
 
 const { slogan, content } = chuquitaniaContent
-const { artSchools, environment, main, research, tourism } = content
+const { artSchools, environment, main, research } = content
 const iterableSections = [artSchools, environment, research]
 
 function Chiquitania() {
