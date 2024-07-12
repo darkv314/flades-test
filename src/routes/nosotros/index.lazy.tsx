@@ -19,7 +19,7 @@ function Nosotros() {
     <div className='flex flex-col gap-10 pb-10'>
       <section className='relative'>
         <FadeImageSlider slides={nosotrosSlider} />
-        <div className={clsx(`h-[100svh] backdrop-blur-[2px] px-8 bg-blur flex flex-col items-center justify-center text-white gap-16 relative z-10`)}>
+        <div className={clsx(`h-[100svh] backdrop-blur-[2px] px-8 bg-blur flex flex-col items-center justify-center text-white gap-4 lg:gap-12 relative z-10`)}>
           <section className='flex flex-col text-center max-w-[60ch] items-center gap-4'>
             <h1 className='text-6xl font-bold'>{slogan.title}</h1>
             <p className='text-xl'>{slogan.content[language]}</p>

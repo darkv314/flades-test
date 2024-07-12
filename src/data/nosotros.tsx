@@ -49,7 +49,7 @@ export const nosotrosContent = {
             },
             goals: [
                 {
-                    en: "Work in Bolivia to Empower vulnerable areas transforming them into self-sustaining ones.",
+                    en: "Work in Bolivia to empower vulnerable areas transforming them into self-sustaining ones.",
                     es: "Trabajar en Bolivia para Empoderar áreas vulnerables transformándolas en autosustentables."
                 },
                 {
