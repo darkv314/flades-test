@@ -1,3 +1,4 @@
+import { ReactNode } from "@tanstack/react-router"
 import { clsx } from "clsx"
 
 type InfoSectionProps = {
@@ -5,6 +6,7 @@ type InfoSectionProps = {
     title?: string
     start: number
     color?: string
+    children?: ReactNode
     contents: {
         title: string
         content: string
@@ -13,7 +15,7 @@ type InfoSectionProps = {
     }[]
 }
 
-function ContentSection({ title, contents, start, color = "white", wave = false }: InfoSectionProps) {
+function ContentSection({ title, contents, start, color = "white", wave = false, children }: InfoSectionProps) {
     return (
         <section style={{
             backgroundColor: color
@@ -24,7 +26,10 @@ function ContentSection({ title, contents, start, color = "white", wave = false 
                     <section className='flex gap-8 p-4 max-w-[55ch] md:max-w-[75ch] lg:max-w-[60ch]'>
                         <div className='flex flex-col gap-4'>
                             <h3 className='text-4xl font-bold'>{content.title}</h3>
-                            <p className='px-1 text-xl leading-8 max-h-[400px] overflow-y-auto'>{content.content}</p>
+                            <span className='flex flex-col gap-4 max-h-[400px] overflow-y-auto'>
+                                <p className='px-1 text-xl leading-8'>{content.content}</p>
+                                {children}
+                            </span>
                         </div>
                     </section>
                     <img className='h-[500px] rounded-lg w-[90%] md:w-[80%] lg:w-[40%] object-cover' src={content.imgSrc} alt={content.imgAlt} />
