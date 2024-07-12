@@ -1,7 +1,7 @@
 import useEmblaCarousel from "embla-carousel-react"
 import Fade from 'embla-carousel-fade'
 import { useEffect } from "react"
-import clsx from "clsx"
+import { clsx } from "clsx"
 
 type FadeImageSliderProps = {
     slides: { src: string, alt: string }[]

@@ -3,7 +3,7 @@ import useLanguage from '../../hooks/useLanguage';
 import { IconoirProvider } from 'iconoir-react';
 import PageBanner from '../../components/shared/PageBanner';
 import { projectsSlider, proyectosContent } from '../../data/proyectos';
-import clsx from 'clsx';
+import { clsx } from 'clsx';
 import InfoBox from '../../components/shared/InfoBox';
 
 export const Route = createLazyFileRoute('/proyectos/')({
@@ -24,11 +24,20 @@ function Proyectos() {
         <div className='grid gap-8 w-[80%] lg:w-[800px] grid-cols-1 sm:grid-cols-2 lg:grid-cols-3  '>
           {
             [events, projects, studies, trainings, workshops].map((category) => (
+
               <button
+                onClick={async () => {
+                  const element = document.getElementById(category.title[language])
+                  if (element) {
+                    element.scrollIntoView({ behavior: 'smooth' })
+                  }
+                }}
                 key={`button-${category.title[language]}`}
                 className='shadow-md rounded-md flex gap-3 items-center'
               >
-                <span className={clsx(`bg-[${category.color}] w-[20px] h-full rounded-l-md`)}></span>
+                <span style={{
+                  backgroundColor: category.color,
+                }} className={clsx(`w-[20px] h-full rounded-l-md`)}></span>
                 <p className='py-4 text-xl font-semibold flex items-center gap-2 justify-between w-full pr-2'>
                   {category.title[language]}
                   <IconoirProvider iconProps={{
@@ -38,11 +47,13 @@ function Proyectos() {
                   </IconoirProvider>
                 </p>
               </button>
+
             ))
           }
         </div>
       </section>
       <InfoBox
+        id={events.title[language]}
         title={events.cices.title[language]}
         color={events.color}
         items={events.cices.events.map((event) => {
@@ -60,10 +71,10 @@ function Proyectos() {
           }
         })}
       />
-      <InfoBox title={projects.title[language]} color={projects.color} items={projects.items} icon={projects.icon} />
-      <InfoBox title={studies.title[language]} color={studies.color} items={studies.items} icon={studies.icon} />
-      <InfoBox title={trainings.title[language]} color={trainings.color} items={trainings.cities} icon={trainings.icon} />
-      <InfoBox
+      <InfoBox id={projects.title[language]} title={projects.title[language]} color={projects.color} items={projects.items} icon={projects.icon} />
+      <InfoBox id={studies.title[language]} title={studies.title[language]} color={studies.color} items={studies.items} icon={studies.icon} />
+      <InfoBox id={trainings.title[language]} title={trainings.title[language]} color={trainings.color} items={trainings.cities} icon={trainings.icon} />
+      <InfoBox id={workshops.title[language]}
         title={workshops.carried.title[language]}
         color={workshops.color}
         items={workshops.carried.workshops}

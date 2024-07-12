@@ -1,6 +1,6 @@
 import { ReactNode } from "react";
 import FadeImageSlider from "./FadeImageSlider";
-import clsx from "clsx";
+import { clsx } from "clsx";
 
 type PageBannerProps = {
     title: string;

@@ -1,9 +1,10 @@
 import { ReactNode } from "@tanstack/react-router";
 import { IconoirProvider } from "iconoir-react";
 import useLanguage from "../../hooks/useLanguage";
-import clsx from "clsx";
+import { clsx } from "clsx";
 
 type InfoBoxProps = {
+    id: string;
     title: string;
     color: string;
     icon: ReactNode,
@@ -18,10 +19,12 @@ type InfoBoxProps = {
     }[];
 }
 
-function InfoBox({ title, items, color, icon, secondTitle = '', secondItems = [] }: InfoBoxProps) {
+function InfoBox({ id, title, items, color, icon, secondTitle = '', secondItems = [] }: InfoBoxProps) {
     return (
-        <section className='grid w-full place-items-center'>
-            <div className={clsx(`bg-[${color}] p-8 border-2 rounded-lg border-black w-[80%] max-w-[80%] gap-8 grid place-items-center`)}>
+        <section id={id} className='grid w-full place-items-center scroll-my-32'>
+            <div style={{
+                backgroundColor: color,
+            }} className={clsx(`p-8 border-2 rounded-lg border-black w-[80%] max-w-[80%] gap-8 grid place-items-center`)}>
                 <InfoContent title={title} items={items} icon={icon} />
                 {secondTitle && <InfoContent title={secondTitle} items={secondItems} icon={icon} />}
             </div>

@@ -148,7 +148,7 @@ export const proyectosContent = {
         },
         workshops: {
             icon: <DesignPencil />,
-            color: "#ec6c9b",
+            color: "#56249699",
             title: {
                 en: "Workshops",
                 es: "Talleres"
@@ -200,7 +200,7 @@ export const proyectosContent = {
         },
         trainings: {
             icon: <Learning />,
-            color: "#FF9D6B",
+            color: "#d74e09ad",
             title: {
                 en: "Trainings",
                 es: "Capacitaciones"
@@ -234,7 +234,7 @@ export const proyectosContent = {
         },
         events: {
             icon: <Community />,
-            color: "#7FB5DE",
+            color: "#1a659ea3",
             title: {
                 en: "Events",
                 es: "Eventos"

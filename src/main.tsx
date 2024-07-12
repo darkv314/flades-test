@@ -17,10 +17,10 @@ declare module '@tanstack/react-router' {
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <NextUIProvider>
-      <LanguageProvider>
+    <LanguageProvider>
+      <NextUIProvider>
         <RouterProvider router={router} />
-      </LanguageProvider>
-    </NextUIProvider>
+      </NextUIProvider>
+    </LanguageProvider>
   </React.StrictMode>,
 )

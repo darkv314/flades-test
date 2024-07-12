@@ -1,5 +1,5 @@
 import { createRootRoute, Outlet, ScrollRestoration } from '@tanstack/react-router'
-import { TanStackRouterDevtools } from '@tanstack/router-devtools'
+// import { TanStackRouterDevtools } from '@tanstack/router-devtools'
 import Navbar from '../components/shared/Navbar'
 
 export const Route = createRootRoute({
@@ -12,7 +12,7 @@ function Layout() {
             <ScrollRestoration />
             <Navbar />
             <Outlet />
-            <TanStackRouterDevtools />
+            {/* <TanStackRouterDevtools /> */}
         </main>
     )
 }

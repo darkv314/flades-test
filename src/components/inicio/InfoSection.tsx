@@ -1,5 +1,5 @@
 import { Link, ReactNode } from "@tanstack/react-router";
-import clsx from "clsx";
+import { clsx } from "clsx";
 import FadeImageSlider from "../shared/FadeImageSlider";
 import useLanguage from "../../hooks/useLanguage";
 

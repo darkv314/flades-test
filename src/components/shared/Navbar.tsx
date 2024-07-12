@@ -5,7 +5,7 @@ import { Dispatch, Key, SetStateAction, useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { IconoirProvider, Menu, Xmark } from "iconoir-react";
 import { Autocomplete, AutocompleteItem } from "@nextui-org/react";
-import clsx from "clsx";
+import { clsx } from "clsx";
 import useLanguage from "../../hooks/useLanguage";
 
 function Navbar() {
