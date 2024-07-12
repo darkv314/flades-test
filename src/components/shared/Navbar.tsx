@@ -1,34 +1,24 @@
 import flades from "../../assets/shared/logoFlades.png"
 import { Link, useLocation } from "@tanstack/react-router"
 import { languages, navTitles } from "../../data/shared"
-import { Dispatch, Key, SetStateAction, useEffect, useState } from "react";
+import { Dispatch, Key, SetStateAction, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { IconoirProvider, Menu, Xmark } from "iconoir-react";
 import { Autocomplete, AutocompleteItem } from "@nextui-org/react";
 import { clsx } from "clsx";
 import useLanguage from "../../hooks/useLanguage";
+import useScroll from "../../hooks/useScroll";
 
 function Navbar() {
-    const [isScrolled, setIsScrolled] = useState(false);
+    // const [isScrolled, setIsScrolled] = useState(false);
     const [menuOpen, setMenuOpen] = useState(false);
     const { language } = useLanguage();
     const { pathname } = useLocation();
-
-    useEffect(() => {
-        console.log(pathname);
-        const handleScroll = () => {
-            const isScrolled = window.scrollY > 30;
-            setIsScrolled(isScrolled);
-        };
-
-        window.addEventListener('scroll', handleScroll);
-
-        return () => window.removeEventListener('scroll', handleScroll);
-    }, []);
+    const isScrolled = useScroll({ scrollY: 30 });
 
     return (
         <>
-            <nav className={clsx("fixed w-full md:py-4 lg:py-0 py-0 gap-8 top-0 z-30 flex justify-between items-center md:pl-10 md:pr-14 sm:pl-4 sm:pr-8 pr-2 transition-all",
+            <nav className={clsx("fixed w-full md:py-4 lg:py-0 py-0 gap-8 top-0 z-30 flex bg-[#50505033] backdrop-blur-[10px] justify-between items-center md:pl-10 md:pr-14 sm:pl-4 sm:pr-8 pr-2 transition-all",
                 isScrolled && "bg-[#50505033] backdrop-blur-[10px] transition-all", pathname === "/" && "sticky")}>
                 <Link to="/">
                     <img className="w-40 sm:w-48" src={flades} alt="Fundación Flades Logo" />

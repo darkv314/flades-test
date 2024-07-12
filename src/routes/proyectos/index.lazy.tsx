@@ -5,6 +5,8 @@ import PageBanner from '../../components/shared/PageBanner';
 import { projectsSlider, proyectosContent } from '../../data/proyectos';
 import { clsx } from 'clsx';
 import InfoBox from '../../components/shared/InfoBox';
+import { useRef } from 'react';
+import UpArrow from '../../components/shared/UpArrow';
 
 export const Route = createLazyFileRoute('/proyectos/')({
   component: () => <Proyectos />,
@@ -15,18 +17,19 @@ const { events, projects, studies, trainings, workshops } = content;
 
 function Proyectos() {
   const { language } = useLanguage()
+  const buttonsRef = useRef<HTMLDivElement>(null);
 
   return (
     <div className='flex flex-col gap-10 pb-10'>
+      <UpArrow buttonsRef={buttonsRef} />
       <PageBanner slides={projectsSlider} content={slogan.content[language]} title={slogan.title[language]}>
       </PageBanner>
-      <section className='flex flex-col gap-4 items-center'>
+      <section id='buttons' ref={buttonsRef} className='flex flex-col gap-4 items-center'>
         <div className='grid gap-8 w-[80%] lg:w-[800px] grid-cols-1 sm:grid-cols-2 lg:grid-cols-3  '>
           {
             [events, projects, studies, trainings, workshops].map((category) => (
-
               <button
-                onClick={async () => {
+                onClick={() => {
                   const element = document.getElementById(category.title[language])
                   if (element) {
                     element.scrollIntoView({ behavior: 'smooth' })
@@ -81,6 +84,6 @@ function Proyectos() {
         icon={workshops.icon}
         secondTitle={workshops.held.title[language]}
         secondItems={workshops.held.workshops} />
-    </div>
+    </div >
   )
 }
