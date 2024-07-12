@@ -18,8 +18,8 @@ function Navbar() {
 
     return (
         <>
-            <nav className={clsx("fixed w-full md:py-4 lg:py-0 py-0 gap-8 top-0 z-30 flex bg-[#50505033] backdrop-blur-[10px] justify-between items-center md:pl-10 md:pr-14 sm:pl-4 sm:pr-8 pr-2 transition-all",
-                isScrolled && "bg-[#50505033] backdrop-blur-[10px] transition-all", pathname === "/" && "sticky")}>
+            <nav className={clsx("fixed w-full md:py-4 lg:py-0 py-0 gap-8 top-0 z-30 flex backdrop-blur-[10px] justify-between items-center md:pl-10 md:pr-14 sm:pl-4 sm:pr-8 pr-2 transition-all",
+                isScrolled && "bg-[#50505033] backdrop-blur-[10px] transition-all", pathname === "/" && "sticky", pathname !== '/' && "bg-[#50505033] ")}>
                 <Link to="/">
                     <img className="w-40 sm:w-48" src={flades} alt="Fundación Flades Logo" />
                 </Link>
@@ -117,7 +117,9 @@ function SelectLanguage({ width = '150px' }: SelectLanguageProps) {
     };
 
     return (
-        <Autocomplete isClearable={false} defaultItems={languages} selectedKey={language} onSelectionChange={handleSelectionChange} className={clsx(width ? `w-[${width}]` : 'w-[100%]')} label={language === 'en' ? "Language" : "Idioma"} placeholder="Selecciona un lenguaje">
+        <Autocomplete inputProps={{
+            disabled: true
+        }} isClearable={false} defaultItems={languages} selectedKey={language} onSelectionChange={handleSelectionChange} className={clsx(width ? `w-[${width}]` : 'w-[100%]')} label={language === 'en' ? "Language" : "Idioma"} placeholder="Selecciona un lenguaje">
             {
                 (language) => <AutocompleteItem key={language.value} value={language.value} textValue={language.label}>
                     <div className="flex gap-2 items-center">
