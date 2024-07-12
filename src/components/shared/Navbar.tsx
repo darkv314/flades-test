@@ -125,7 +125,7 @@ function SelectLanguage({ width = '150px' }: SelectLanguageProps) {
     };
 
     return (
-        <Autocomplete isClearable={false} defaultItems={languages} selectedKey={language} onSelectionChange={handleSelectionChange} className={`w-[${width}]`} label={language === 'en' ? "Language" : "Idioma"} placeholder="Selecciona un lenguaje">
+        <Autocomplete isClearable={false} defaultItems={languages} selectedKey={language} onSelectionChange={handleSelectionChange} className={clsx(width ? `w-[${width}]` : 'w-[100%]')} label={language === 'en' ? "Language" : "Idioma"} placeholder="Selecciona un lenguaje">
             {
                 (language) => <AutocompleteItem key={language.value} value={language.value} textValue={language.label}>
                     <div className="flex gap-2 items-center">
