@@ -48,7 +48,6 @@ export const nosotrosContent = {
                 es: "Metas"
             },
             goals: [
-
                 {
                     en: "Work in Bolivia to Empower vulnerable areas transforming them into self-sustaining ones.",
                     es: "Trabajar en Bolivia para Empoderar áreas vulnerables transformándolas en autosustentables."
@@ -118,7 +117,7 @@ export const nosotrosContent = {
                     es: "Defensa, promoción y difusión de los derechos humanos."
                 },
                 {
-                    en: "•	Stimulate, collaborate and participate in public and private sector initiatives related to the field of Social and Economic Development in its different degrees and themes such as: Education and Training, Technology, Humanitarian Action in the face of social needs, Gender Equality.",
+                    en: "Stimulate, collaborate and participate in public and private sector initiatives related to the field of Social and Economic Development in its different degrees and themes such as: Education and Training, Technology, Humanitarian Action in the face of social needs, Gender Equality.",
                     es: "Estimular, colaborar y participar en iniciativas del sector público y privado relacionadas con el ámbito del Desarrollo Social y Económico en sus diferentes grados y temáticas como: Educación y Capacitación, Tecnología, Acción Humanitaria ante necesidades sociales, Igualdad de Género."
                 }
             ]
