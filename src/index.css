@@ -15,3 +15,30 @@ h5,
 h6 {
     text-wrap: balance;
 }
+
+.wave-inverted {
+    position: absolute;
+    bottom: -100px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    z-index: 5;
+}
+
+.wave {
+    position: absolute;
+    top: -60px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    z-index: 5;
+}
+
+.wave svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 65px;
+}

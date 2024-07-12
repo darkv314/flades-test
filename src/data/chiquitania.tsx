@@ -70,6 +70,7 @@ export const chuquitaniaContent = {
             }
         },
         artSchools: {
+            color: "#6b26b6",
             title: {
                 en: "Art Schools",
                 es: "Escuelas de Arte"
@@ -77,7 +78,7 @@ export const chuquitaniaContent = {
             items: [
                 {
                     title: {
-                        en: "The Music",
+                        en: "Music",
                         es: "La Música"
                     },
                     content: {
@@ -87,7 +88,7 @@ export const chuquitaniaContent = {
                 },
                 {
                     title: {
-                        en: "The Painting",
+                        en: "Painting",
                         es: "La Pintura"
                     },
                     content: {
@@ -97,7 +98,7 @@ export const chuquitaniaContent = {
                 },
                 {
                     title: {
-                        en: "The Woodcarving",
+                        en: "Woodcarving",
                         es: "El Tallado en Madera"
                     },
                     content: {
@@ -109,6 +110,7 @@ export const chuquitaniaContent = {
 
         },
         research: {
+            color: "#5f6fbf",
             title: {
                 en: "Research and Training Center (CIC – FLADES)",
                 es: "Centro de Investigación y Capacitación (CIC – FLADES)"
@@ -169,6 +171,7 @@ export const chuquitaniaContent = {
             ]
         },
         environment: {
+            color: "#5db26d",
             title: {
                 en: "Environment",
                 es: "Medio Ambiente"

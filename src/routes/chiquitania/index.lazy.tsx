@@ -16,7 +16,7 @@ const iterableSections = [artSchools, environment, research]
 function Chiquitania() {
   const { language } = useLanguage();
   return (
-    <div className='flex flex-col gap-10 pb-10'>
+    <div className='flex flex-col pb-10'>
       <PageBanner slides={chiquitaniaSlider} content={slogan.content[language]} title={slogan.title[language]} />
       <ContentSection start={0} contents={[{
         title: main.title[language],
@@ -28,7 +28,7 @@ function Chiquitania() {
         iterableSections.map((section, index) => {
           const prevLength = index === 0 ? 0 : iterableSections[index - 1].items.length
           return (
-            <ContentSection start={prevLength % 2 + 1} key={section.title[language]} title={section.title[language]} contents={section.items.map((content) => ({
+            <ContentSection wave color={section.color} start={prevLength % 2 + 1} key={section.title[language]} title={section.title[language]} contents={section.items.map((content) => ({
               title: content.title[language],
               content: content.content[language],
               imgSrc: chiquitania,
