@@ -1,5 +1,5 @@
 import flades from "../../assets/shared/logoFlades.png"
-import { Link } from "@tanstack/react-router"
+import { Link, useLocation } from "@tanstack/react-router"
 import { languages, navTitles } from "../../data/shared"
 import { Dispatch, Key, SetStateAction, useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
@@ -12,8 +12,10 @@ function Navbar() {
     const [isScrolled, setIsScrolled] = useState(false);
     const [menuOpen, setMenuOpen] = useState(false);
     const { language } = useLanguage();
+    const { pathname } = useLocation();
 
     useEffect(() => {
+        console.log(pathname);
         const handleScroll = () => {
             const isScrolled = window.scrollY > 30;
             setIsScrolled(isScrolled);
@@ -26,14 +28,14 @@ function Navbar() {
 
     return (
         <>
-            <nav className={clsx("sticky md:py-4 lg:py-0 py-0 gap-8 top-0 z-30 flex justify-between items-center md:pl-10 md:pr-14 sm:pl-4 sm:pr-8 pr-2 transition-all",
-                isScrolled && "bg-[#50505033] backdrop-blur-[10px] transition-all rounded-b-2xl")}>
+            <nav className={clsx("fixed w-full md:py-4 lg:py-0 py-0 gap-8 top-0 z-30 flex justify-between items-center md:pl-10 md:pr-14 sm:pl-4 sm:pr-8 pr-2 transition-all",
+                isScrolled && "bg-[#50505033] backdrop-blur-[10px] transition-all", pathname === "/" && "sticky")}>
                 <Link to="/">
                     <img className="w-40 sm:w-48" src={flades} alt="Fundación Flades Logo" />
                 </Link>
                 <ul className="gap-4 hidden md:flex items-center">
                     {navTitles.map((link) => (
-                        <li className="capitalize hover:underline text-[#35ad35] font-semibold text-center" key={link.to}>
+                        <li className={clsx("capitalize hover:underline text-[#35ad35] font-semibold text-center transition-all", isScrolled && 'text-white transition-all')} key={link.to}>
                             <Link to={link.to}>{link.title[language]}</Link>
                         </li>
                     ))}
