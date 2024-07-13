@@ -74,7 +74,7 @@ const redesSociales = [
     },
     {
         key: "linkedin",
-        href: "https://www.facebook.com/FUNDACIONFLADES",
+        href: "https://www.linkedin.com/company/fundacionflades/",
         icon: <Linkedin color="#0A66C2" />,
     },
 ];
