@@ -20,7 +20,7 @@ function FadeImageSlider({ slides, height = 100 }: FadeImageSliderProps) {
     }, [emblaApi])
 
     return (
-        <div className={clsx(`embla h-[${height}svh] md:min-h-[${height}svh] w-full absolute`)}>
+        <div style={{height: `${height}svh`}} className={clsx(`embla h-[${height}svh] md:min-h-[${height}svh] w-full absolute`)}>
             <div className="embla__viewport h-full" ref={emblaRef}>
                 <div className="embla__container h-full">
                     {slides.map((slide) => (
