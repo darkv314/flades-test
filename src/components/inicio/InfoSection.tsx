@@ -21,7 +21,7 @@ function InfoSection({ index, slider = false, imgSrc, imgTitle, gallery = [], ti
     return (
         <section className="min-h-[50svh] md:min-h-[100svh] w-full relative flex">
             {
-                slider ? <FadeImageSlider slides={gallery} /> :
+                slider ? <FadeImageSlider height={50} slides={gallery} /> :
                     <img className="size-full absolute object-cover" src={imgSrc} alt={imgTitle?.[language]} />
             }
             <div className={clsx("xl:w-[20%] lg:w-[30%] md:w-[40%] w-full z-10 p-4 flex flex-col justify-center relative md:absolute text-white min-h-full md:min-h-[100svh] bg-blur backdrop-blur-[1px] md:backdrop-blur-md shadow-section gap-4 md:gap-10",

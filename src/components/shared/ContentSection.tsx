@@ -20,7 +20,7 @@ function ContentSection({ title, contents, start, color = "white", wave = false,
         <section style={{
             backgroundColor: color
         }} className={clsx('flex flex-col gap-8 items-center relative py-20', color !== "white" && "text-white")}>
-            {title && <h2 className="text-4xl font-bold text-center">{title}</h2>}
+            {title && <h2 className="text-4xl font-bold text-center px-2">{title}</h2>}
             {contents.map((content, index) => (
                 <section key={`section-${content.title}`} className={clsx(((index + start) % 2) !== 0 && "lg:flex-row-reverse", `p-4 flex flex-col lg:flex-row items-center gap-8 lg:gap-16 justify-center`)}>
                     <section className='flex gap-8 p-4 max-w-[55ch] md:max-w-[75ch] lg:max-w-[60ch]'>

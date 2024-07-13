@@ -10,7 +10,6 @@ import useLanguage from "../../hooks/useLanguage";
 import useScroll from "../../hooks/useScroll";
 
 function Navbar() {
-    // const [isScrolled, setIsScrolled] = useState(false);
     const [menuOpen, setMenuOpen] = useState(false);
     const { language } = useLanguage();
     const { pathname } = useLocation();

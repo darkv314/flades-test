@@ -16,7 +16,7 @@ function PageBanner({ title, slides, children, content }: PageBannerProps) {
             <div className={clsx(`h-[100svh] backdrop-blur-[2px] px-8 bg-blur flex flex-col items-center justify-center text-white gap-4 lg:gap-12 relative z-10`)}>
                 <section className='flex flex-col px-2 text-center max-w-[60ch] items-center gap-4'>
                     <h1 className='text-3xl md:text-6xl font-bold'>{title}</h1>
-                    <p className='text-lg  md:text-xl'>{content}</p>
+                    <p className='text-md  md:text-xl'>{content}</p>
                 </section>
                 {children}
             </div>
