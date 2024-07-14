@@ -17,7 +17,7 @@ function Navbar() {
 
     return (
         <>
-            <nav className={clsx("fixed w-full lg:py-0 py-0 gap-8 top-0 z-30 flex backdrop-blur-[10px] justify-between items-center md:pl-10 md:pr-14 sm:pl-4 sm:pr-8 pr-2 transition-all",
+            <nav className={clsx("fixed w-full px-2 lg:py-0 py-0 gap-8 top-0 z-30 flex backdrop-blur-[10px] justify-between items-center md:pl-10 md:pr-14 sm:pl-4 sm:pr-8 pr-2 transition-all",
                 isScrolled && "bg-[#50505033] backdrop-blur-[10px] transition-all", pathname === "/" && "sticky", pathname !== '/' && "bg-[#50505033] ")}>
                 <Link to="/">
                     <img className="w-40 md:48" src={flades} alt="Fundación Flades Logo" />
