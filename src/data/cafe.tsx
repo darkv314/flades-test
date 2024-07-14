@@ -1,4 +1,3 @@
-import { color } from "framer-motion"
 import cafe1 from "../assets/cafe/1.jpg"
 import cafe2 from "../assets/cafe/2.jpg"
 import cafe3 from "../assets/cafe/3.jpg"
