@@ -11,12 +11,13 @@ const buttonAnimation = {
 
 type UpArrowProps = {
     buttonsRef: RefObject<HTMLDivElement>
+    isBigger?: boolean
 }
 
-function UpArrow({ buttonsRef }: UpArrowProps) {
+function UpArrow({ buttonsRef, isBigger = false }: UpArrowProps) {
     const isScrolled = useScroll({ scrollY: 1000 });
     useEffect(() => {
-        buttonsRef.current?.classList.add('scroll-my-32')
+        buttonsRef.current?.classList.add(isBigger ? 'scroll-my-32' : 'scroll-my-[5.5rem]')
     }, [buttonsRef])
     return (
         <AnimatePresence>

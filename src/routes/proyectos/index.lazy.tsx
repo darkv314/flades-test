@@ -21,7 +21,7 @@ function Proyectos() {
 
   return (
     <div className='flex flex-col gap-10 pb-10'>
-      <UpArrow buttonsRef={buttonsRef} />
+      <UpArrow buttonsRef={buttonsRef} isBigger />
       <PageBanner slides={projectsSlider} content={slogan.content[language]} title={slogan.title[language]}>
       </PageBanner>
       <section id='buttons' ref={buttonsRef} className='flex flex-col gap-4 items-center'>
