@@ -11,6 +11,9 @@ const config: Config = {
     ],
     theme: {
         extend: {
+            screens: {
+                xs: "475px",
+            },
             colors: {
                 blur: "#0000004d",
             },

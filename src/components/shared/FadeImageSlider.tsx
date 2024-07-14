@@ -5,10 +5,9 @@ import { clsx } from "clsx"
 
 type FadeImageSliderProps = {
     slides: { src: string, alt: string }[]
-    height?: number
 }
 
-function FadeImageSlider({ slides, height = 100 }: FadeImageSliderProps) {
+function FadeImageSlider({ slides }: FadeImageSliderProps) {
     const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true, duration: 30 }, [Fade()])
 
     useEffect(() => {
@@ -20,7 +19,7 @@ function FadeImageSlider({ slides, height = 100 }: FadeImageSliderProps) {
     }, [emblaApi])
 
     return (
-        <div style={{height: `${height}svh`}} className={clsx(`embla h-[${height}svh] md:min-h-[${height}svh] w-full absolute`)}>
+        <div className={clsx(`embla h-full  w-full absolute`)}>
             <div className="embla__viewport h-full" ref={emblaRef}>
                 <div className="embla__container h-full">
                     {slides.map((slide) => (

@@ -8,7 +8,7 @@ type InfoSectionProps = {
     color?: string
     children?: ReactNode
     contents: {
-        title: string
+        title?: string
         content: string
         imgSrc: string
         imgAlt: string
@@ -25,7 +25,7 @@ function ContentSection({ title, contents, start, color = "white", wave = false,
                 <section key={`section-${content.title}`} className={clsx(((index + start) % 2) !== 0 && "lg:flex-row-reverse", `p-4 flex flex-col lg:flex-row items-center gap-8 lg:gap-16 justify-center`)}>
                     <section className='flex gap-8 p-4 max-w-[55ch] md:max-w-[75ch] lg:max-w-[60ch]'>
                         <div className='flex flex-col gap-4'>
-                            <h3 className='text-4xl font-bold'>{content.title}</h3>
+                            {content.title && <h3 className='text-4xl font-bold'>{content.title}</h3>}
                             <span className='flex flex-col gap-4 max-h-[400px] overflow-y-auto'>
                                 <p className='px-1 text-xl leading-8'>{content.content}</p>
                                 {children}

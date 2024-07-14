@@ -10,8 +10,9 @@ import bancoFie from "../assets/inicio/brands/bancoFie.png";
 import pacto from "../assets/inicio/brands/pactoGlobal.png";
 import nosotros from "../assets/inicio/sections/nosotros.jpg";
 import { InfoSectionProps } from "../components/inicio/InfoSection";
-import { Facebook, IconoirProvider, Instagram, Linkedin } from "iconoir-react";
+import { Facebook, Instagram, Linkedin } from "iconoir-react";
 import whatsapp from "../assets/inicio/icons/whatsapp.svg"
+import Contacts from "../components/shared/Contacts";
 
 export const brands = [
     {
@@ -56,7 +57,7 @@ export const brands = [
     },
 ];
 
-const redesSociales = [
+export const redesSociales = [
     {
         key: "instagram",
         href: "https://www.instagram.com/fundacionflades/",
@@ -204,33 +205,12 @@ export const infoSections: InfoSectionProps[] = [
             es: "Contacto",
         },
         description: {
-            en: "Our address Calle Quenallata Nº 10, between 14 and 15 of Achumani. La Paz, Bolivia",
-            es: "Nuestra dirección Calle Quenallata Nº 10, entre 14 y 15 de Achumani. La Paz, Bolivia",
+            en: "Our address is Calle Quenallata Nº 10, between 14 and 15 of Achumani. La Paz, Bolivia",
+            es: "Nuestra dirección es Calle Quenallata Nº 10, entre 14 y 15 de Achumani. La Paz, Bolivia",
         },
         button: false,
         customContent: (
-            <div className="flex flex-col gap-4">
-                <p>Email: <span>info@fundacionflades.org</span></p>
-                <p>Llámanos: +591(2) 2776191</p>
-                <p>Whatsapp: +591 77579157</p>
-                <span className="flex gap-2">
-                    {
-                        redesSociales.map((red) => (
-                            <a key={red.key} href={red.href} className="font-bold">
-                                <IconoirProvider iconProps={
-                                    {
-                                        fontWeight: "bold",
-                                        width: "2.5rem",
-                                        height: "2.5rem",
-                                    }
-                                }>
-                                    {red.icon}
-                                </IconoirProvider>
-                            </a>
-                        ))
-                    }
-                </span>
-            </div>
+            <Contacts />
         )
     },
 ];

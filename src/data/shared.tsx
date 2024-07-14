@@ -14,6 +14,9 @@ const navLinks = [
     {
         to: "/nosotros",
     },
+    {
+        to: "/cafe"
+    }
 ] as const satisfies ReadonlyArray<LinkProps>;
 
 export let navTitles = navLinks.map((link) => {
@@ -39,6 +42,13 @@ navTitles = [
         title: {
             es: "proyectos",
             en: "projects",
+        },
+    },
+    {
+        to: "/cafe",
+        title: {
+            es: "café",
+            en: "cafe",
         },
     },
     {

@@ -20,9 +20,9 @@ function Navbar() {
             <nav className={clsx("fixed w-full md:py-4 lg:py-0 py-0 gap-8 top-0 z-30 flex backdrop-blur-[10px] justify-between items-center md:pl-10 md:pr-14 sm:pl-4 sm:pr-8 pr-2 transition-all",
                 isScrolled && "bg-[#50505033] backdrop-blur-[10px] transition-all", pathname === "/" && "sticky", pathname !== '/' && "bg-[#50505033] ")}>
                 <Link to="/">
-                    <img className="w-40 sm:w-48" src={flades} alt="Fundación Flades Logo" />
+                    <img className="w-40 md:48" src={flades} alt="Fundación Flades Logo" />
                 </Link>
-                <ul className="gap-4 hidden md:flex items-center">
+                <ul className="gap-4 hidden lg:flex items-center">
                     {navTitles.map((link) => (
                         <li className={clsx("capitalize hover:underline text-[#35ad35] font-semibold text-center transition-all", isScrolled && 'text-white transition-all')} key={link.to}>
                             <Link to={link.to}>{link.title[language]}</Link>
@@ -32,7 +32,7 @@ function Navbar() {
                 </ul>
                 <button onClick={() => {
                     setMenuOpen(true)
-                }} className="md:hidden bg-transparent w-min p-2 min-w-fit">
+                }} className="lg:hidden bg-transparent w-min p-2 min-w-fit">
                     <IconoirProvider>
                         <Menu />
                     </IconoirProvider>

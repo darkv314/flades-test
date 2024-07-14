@@ -22,6 +22,7 @@ const ProyectosIndexLazyImport = createFileRoute('/proyectos/')()
 const NosotrosIndexLazyImport = createFileRoute('/nosotros/')()
 const ComplianceIndexLazyImport = createFileRoute('/compliance/')()
 const ChiquitaniaIndexLazyImport = createFileRoute('/chiquitania/')()
+const CafeIndexLazyImport = createFileRoute('/cafe/')()
 
 // Create/Update Routes
 
@@ -63,6 +64,11 @@ const ChiquitaniaIndexLazyRoute = ChiquitaniaIndexLazyImport.update({
   import('./routes/chiquitania/index.lazy').then((d) => d.Route),
 )
 
+const CafeIndexLazyRoute = CafeIndexLazyImport.update({
+  path: '/cafe/',
+  getParentRoute: () => rootRoute,
+} as any).lazy(() => import('./routes/cafe/index.lazy').then((d) => d.Route))
+
 // Populate the FileRoutesByPath interface
 
 declare module '@tanstack/react-router' {
@@ -79,6 +85,13 @@ declare module '@tanstack/react-router' {
       path: '/about'
       fullPath: '/about'
       preLoaderRoute: typeof AboutLazyImport
+      parentRoute: typeof rootRoute
+    }
+    '/cafe/': {
+      id: '/cafe/'
+      path: '/cafe'
+      fullPath: '/cafe'
+      preLoaderRoute: typeof CafeIndexLazyImport
       parentRoute: typeof rootRoute
     }
     '/chiquitania/': {
@@ -117,6 +130,7 @@ declare module '@tanstack/react-router' {
 export const routeTree = rootRoute.addChildren({
   IndexLazyRoute,
   AboutLazyRoute,
+  CafeIndexLazyRoute,
   ChiquitaniaIndexLazyRoute,
   ComplianceIndexLazyRoute,
   NosotrosIndexLazyRoute,
@@ -133,6 +147,7 @@ export const routeTree = rootRoute.addChildren({
       "children": [
         "/",
         "/about",
+        "/cafe/",
         "/chiquitania/",
         "/compliance/",
         "/nosotros/",
@@ -144,6 +159,9 @@ export const routeTree = rootRoute.addChildren({
     },
     "/about": {
       "filePath": "about.lazy.tsx"
+    },
+    "/cafe/": {
+      "filePath": "cafe/index.lazy.tsx"
     },
     "/chiquitania/": {
       "filePath": "chiquitania/index.lazy.tsx"
