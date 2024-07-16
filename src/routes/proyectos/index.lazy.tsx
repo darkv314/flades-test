@@ -75,9 +75,9 @@ function Proyectos() {
         })}
       />
       <InfoBox id={projects.title[language]} title={projects.title[language]} color={projects.color} items={projects.items} icon={projects.icon} />
-      <InfoBox id={studies.title[language]} title={studies.title[language]} color={studies.color} items={studies.items} icon={studies.icon} />
-      <InfoBox id={trainings.title[language]} title={trainings.title[language]} color={trainings.color} items={trainings.cities} icon={trainings.icon} />
-      <InfoBox id={workshops.title[language]}
+      <InfoBox textColor id={studies.title[language]} title={studies.title[language]} color={studies.color} items={studies.items} icon={studies.icon} />
+      <InfoBox textColor id={trainings.title[language]} title={trainings.title[language]} color={trainings.color} items={trainings.cities} icon={trainings.icon} />
+      <InfoBox textColor id={workshops.title[language]}
         title={workshops.carried.title[language]}
         color={workshops.color}
         items={workshops.carried.workshops}

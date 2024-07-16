@@ -49,7 +49,7 @@ function Nosotros() {
         </section>
         <img className='h-[500px] rounded-lg w-[90%] md:w-[80%] lg:w-[40%] object-cover' src={misionVision} alt="" />
       </section>
-      <InfoBox id='goals' title={content.metas.title[language]} color='#8de499' items={content.metas.goals} icon={<Leaf />} />
+      <InfoBox id='goals' textColor title={content.metas.title[language]} color='#12552B' items={content.metas.goals} icon={<Leaf />} />
     </div>
   )
 }

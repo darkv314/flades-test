@@ -1,14 +1,10 @@
 import attackPro from "../assets/inicio/brands/attackPro.png";
 import caf from "../assets/inicio/brands/caf.png";
-import bago from "../assets/inicio/brands/bago.png";
-import solydes from "../assets/inicio/brands/solydes.png";
-import giz from "../assets/inicio/brands/giz.png";
-import bancoUnion from "../assets/inicio/brands/bancounion.png";
 import iica from "../assets/inicio/brands/iica.svg";
 import cni from "../assets/inicio/brands/cni.png";
-import bancoFie from "../assets/inicio/brands/bancoFie.png";
 import pacto from "../assets/inicio/brands/pactoGlobal.png";
 import nosotros from "../assets/inicio/sections/nosotros.jpg";
+import uab from "../assets/inicio/brands/uab.png";
 import { InfoSectionProps } from "../components/inicio/InfoSection";
 import { Facebook, Instagram, Linkedin } from "iconoir-react";
 import whatsapp from "../assets/inicio/icons/whatsapp.svg"
@@ -24,20 +20,8 @@ export const brands = [
         name: "Banco de Desarrollo de América Latina",
     },
     {
-        src: bago,
-        name: "Bagó",
-    },
-    {
-        src: solydes,
-        name: "Fundación Solydes",
-    },
-    {
-        src: giz,
-        name: "Giz Deustche Gesellschaft für Internationale Zusammenarbeit",
-    },
-    {
-        src: bancoUnion,
-        name: "Banco Unión",
+        src: uab,
+        name: 'Universidad Autónoma del Beni José Ballivián',
     },
     {
         src: iica,
@@ -46,10 +30,6 @@ export const brands = [
     {
         src: cni,
         name: "Cámara Nacional de Industrias",
-    },
-    {
-        src: bancoFie,
-        name: "Banco FIE",
     },
     {
         src: pacto,

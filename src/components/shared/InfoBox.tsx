@@ -8,6 +8,7 @@ type InfoBoxProps = {
     title: string;
     color: string;
     icon: ReactNode,
+    textColor?: boolean;
     items: {
         es: string;
         en: string;
@@ -19,9 +20,9 @@ type InfoBoxProps = {
     }[];
 }
 
-function InfoBox({ id, title, items, color, icon, secondTitle = '', secondItems = [] }: InfoBoxProps) {
+function InfoBox({ id, title, items, color, icon, secondTitle = '', secondItems = [], textColor = false }: InfoBoxProps) {
     return (
-        <section id={id} className='grid w-full place-items-center scroll-my-32'>
+        <section id={id} className={clsx('grid w-full place-items-center scroll-my-32', textColor && 'text-white')}>
             <div style={{
                 backgroundColor: color,
             }} className={clsx(`p-8 border-2 rounded-lg border-black w-[80%] max-w-[80%] gap-8 grid place-items-center`)}>

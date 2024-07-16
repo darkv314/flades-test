@@ -1,13 +1,18 @@
-import { brands } from "../../data/inicio";
-
 /**
  * An animated logo carousel to show companies using tRPC. Tailwind code taken from Cruip
  * @link https://cruip.com/create-an-infinite-horizontal-scroll-animation-with-tailwind-css/
  */
 
-const animationRow = Array(2).fill(0) as [number, number];
+const animationRow = Array(3).fill(0) as [number, number];
 
-function NuestrosAliados() {
+type NuestrosAliadosProps = {
+    brands: {
+        src: string;
+        name: string;
+    }[];
+}
+
+function NuestrosAliados({ brands }: NuestrosAliadosProps) {
     return (
         <div className='inline-flex w-full flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-200px),transparent_100%)]'>
             {animationRow.map((_, index) => (

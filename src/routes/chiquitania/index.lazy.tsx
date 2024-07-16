@@ -1,10 +1,11 @@
 import { createLazyFileRoute } from '@tanstack/react-router'
 import PageBanner from '../../components/shared/PageBanner'
-import { chiquitaniaSlider, chuquitaniaContent } from '../../data/chiquitania'
+import { chiquitaniaSlider, chuquitaniaContent, chiquitaniaBrands } from '../../data/chiquitania'
 import useLanguage from '../../hooks/useLanguage'
 import ContentSection from '../../components/shared/ContentSection'
 import { useRef } from 'react'
 import UpArrow from '../../components/shared/UpArrow'
+import NuestrosAliados from '../../components/inicio/NuestrosAliados'
 
 export const Route = createLazyFileRoute('/chiquitania/')({
   component: () => <Chiquitania />
@@ -21,7 +22,8 @@ function Chiquitania() {
     <div className='flex flex-col'>
       <UpArrow buttonsRef={inicioRef} />
       <PageBanner slides={chiquitaniaSlider} content={slogan.content[language]} title={slogan.title[language]} />
-      <div ref={inicioRef} className='flex flex-col'>
+      <div ref={inicioRef} className='flex flex-col mt-16'>
+        <NuestrosAliados brands={chiquitaniaBrands} />
         <ContentSection start={0} contents={[{
           title: main.title[language],
           content: main.content[language],

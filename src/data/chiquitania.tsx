@@ -8,6 +8,24 @@ import panel from "../assets/chiquitania/panel.jpg"
 import paty from "../assets/chiquitania/paty.jpg"
 import vainilla from "../assets/chiquitania/vainilla.jpg"
 import nosotros2 from "../assets/nosotros/nosotros2.jpg"
+import bancoFie from "../assets/inicio/brands/bancoFie.png";
+import giz from "../assets/inicio/brands/giz.png";
+import solydes from "../assets/inicio/brands/solydes.png";
+
+export const chiquitaniaBrands = [
+    {
+        src: giz,
+        name: "Giz Deustche Gesellschaft für Internationale Zusammenarbeit",
+    },
+    {
+        src: bancoFie,
+        name: "Banco FIE",
+    },
+    {
+        src: solydes,
+        name: "Fundación Solydes",
+    },
+]
 
 export const chiquitaniaSlider = [
     {
@@ -75,7 +93,7 @@ export const chuquitaniaContent = {
             }
         },
         artSchools: {
-            color: "#6b26b6",
+            color: "#12553C",
             title: {
                 en: "Art Schools",
                 es: "Escuelas de Arte"
@@ -127,7 +145,7 @@ export const chuquitaniaContent = {
 
         },
         research: {
-            color: "#5f6fbf",
+            color: "#006D66",
             title: {
                 en: "Research and Training Center (CIC – FLADES)",
                 es: "Centro de Investigación y Capacitación (CIC – FLADES)"
@@ -267,7 +285,7 @@ export const chuquitaniaContent = {
                 src: iglesia,
                 alt: "Iglesia"
             },
-            color: "#ff5d8a",
+            color: "#50C895",
             content: {
                 en: "The Chiquitanía region has enormous tourism potential that has barely been exploited. It lends itself, without a doubt, to different ways of doing tourism: ecotourism, adventure, health, rural, agrotourism, sports, religious, ornithological, among others, however, something that makes the region unique in its offer is cultural tourism. – missionary. Not even those first missionaries could imagine the way in which the Chiquitano peoples made baroque music their own, and even less so after centuries, in the midst of modernity, that their love and practice for that music introduced in the 18th century endures among the natives. The temples in the middle of the jungle, with their precious baroque altarpieces, their bell towers, the enormous wooden columns, the organs and their ornate pulpits are without a doubt the perfect setting for hundreds of children and young people seeking perfection in each note of music. baroque composed in the region centuries ago. At FLADES we propose to promote the development of cultural tourism linked to nature and its conservation in a sustainable way that generates benefits for the community, preserving the identity of each of the populations.",
                 es: "La región de la Chiquitanía tiene un enorme potencial turístico que apenas ha sido explotado. Se presta, sin duda, a diferentes formas de hacer turismo: ecoturismo, de aventura, de salud, rural, agroturismo, deportivo, religioso, ornitológico, entre otros, sin embargo, algo que hace única a la región en su oferta es el turismo cultural – misional. Ni siquiera aquellos primeros misioneros podían imaginar la forma en que los pueblos chiquitanos hicieron suya la música barroca, y mucho menos después de siglos, en medio de la modernidad, que su amor y práctica por esa música introducida en el siglo XVIII perdura entre los nativos. Los templos en medio de la selva, con sus preciosos retablos barrocos, sus campanarios, las enormes columnas de madera, los órganos y sus púlpitos ornamentados son sin duda el escenario perfecto para cientos de niños y jóvenes que buscan la perfección en cada nota de música barroca compuesta en la región hace siglos. En FLADES proponemos promover el desarrollo del turismo cultural vinculado a la naturaleza y su conservación de manera sostenible que genere beneficios para la comunidad, preservando la identidad de cada una de las poblaciones."

@@ -45,196 +45,10 @@ export const proyectosContent = {
         }
     },
     content: {
-        projects: {
-            icon: <PasteClipboard />,
-            color: "#67C47C",
-            title: {
-                en: "Projects",
-                es: "Proyectos"
-            },
-            cities: [
-                "Santa Cruz",
-                "Oruro",
-                "Cochabamba",
-                "Chuquisaca",
-                "Potosí",
-                "Tarija",
-            ],
-            items: [
-                {
-                    en: "Soil recovery and conservation",
-                    es: "Recuperación y conservación del suelo"
-
-                },
-                {
-                    en: "Organic matter recovery",
-                    es: "Recuperación de materia orgánica"
-
-                },
-                {
-                    en: "Adoption of good practices for the efficient use of water",
-                    es: "Adopción de buenas prácticas para el uso eficiente del agua"
-
-                },
-                {
-                    en: "Adoption of productivity improvement",
-                    es: "Adopción de mejoras de productividad"
-
-                },
-                {
-                    en: "Technology transfer to increase production and good use of the soil",
-                    es: "Transferencia de tecnología para aumentar la producción y buen uso del suelo"
-
-                },
-                {
-                    en: "Territorial integration based on sustainable productive development",
-                    es: "Integración territorial basada en el desarrollo productivo sostenible"
-
-                },
-                {
-                    en: "Environmental impact remediation, Warnes Santa Cruz highway",
-                    es: "Remediación de impacto ambiental, carretera Warnes Santa Cruz"
-
-                },
-                {
-                    en: "New technology enhancers",
-                    es: "Nuevos potenciadores de tecnología"
-
-                },
-                {
-                    en: "Communication campaign developed by the coordination secretariat of the national council against illicit drug trafficking (SC-CONALTID) 'decides to prevent'",
-                    es: "Campaña de comunicación desarrollada por la secretaría de coordinación del consejo nacional contra el tráfico ilícito de drogas (SC-CONALTID) 'decide prevenir'"
-
-                }
-            ],
-        },
-        studies: {
-            icon: <BookStack />,
-            color: "#FFC857",
-            title: {
-                en: "Studies",
-                es: "Estudios"
-            },
-            items: [
-                {
-                    en: "Study and implementation for the transfer of technology to increase production and good use of the soil.",
-                    es: "Estudio e implementación para la transferencia de tecnología para aumentar la producción y buen uso del suelo."
-                },
-                {
-                    en: "Study for national connectivity.",
-                    es: "Estudio para la conectividad nacional."
-                },
-                {
-                    en: "Environmental impact study, Warnes Santa Cruz highway.",
-                    es: "Estudio de impacto ambiental, carretera Warnes Santa Cruz."
-                },
-                {
-                    en: "I study local development processes of shared responsibility.",
-                    es: "Estudio de procesos de desarrollo local de responsabilidad compartida."
-                },
-                {
-                    en: "Finlades Pedagogical System Study.",
-                    es: "Estudio del Sistema Pedagógico Finlades."
-                },
-                {
-                    en: "I study proposals for the new school curriculum in centers of high population density.",
-                    es: "Estudio de propuestas para el nuevo currículo escolar en centros de alta densidad poblacional."
-                },
-                {
-                    en: "Study Proposal for new university careers.",
-                    es: "Estudio Propuesta de nuevas carreras universitarias."
-                },
-            ],
-        },
-        workshops: {
-            icon: <DesignPencil />,
-            color: "#56249699",
-            title: {
-                en: "Workshops",
-                es: "Talleres"
-            },
-            carried: {
-                title: {
-                    en: "Workshops carried out FLADES in conjunction with CICES",
-                    es: "Talleres realizados de FLADES en conjunto con CICES"
-                },
-                workshops: [
-                    {
-                        en: "“The Journalistic Genres” – Miguel Ángel Bastenier",
-                        es: "“Los Géneros Periodísticos” – Miguel Ángel Bastenier"
-                    }
-                ]
-            },
-            held: {
-                title: {
-                    en: "Workshops held FLADES with the Foundation for a New Ibero-American Journalism",
-                    es: "Talleres realizados de FLADES con la Fundación para un Nuevo Periodismo Iberoamericano"
-                },
-                workshops: [
-                    {
-                        en: "“La Paz, Bolivia, July 1-4, 1998",
-                        es: "“La Paz, Bolivia, 1-4 de julio de 1998”"
-                    },
-                    {
-                        en: "“Journalistic Ethics” – Javier Darío Restrepo",
-                        es: "“Ética Periodística” – Javier Darío Restrepo"
-                    },
-                    {
-                        en: "Santa Cruz de la Sierra, Bolivia, November 16 and 17, 1998.",
-                        es: "Santa Cruz de la Sierra, Bolivia, 16 y 17 de noviembre de 1998."
-                    },
-                    {
-                        en: "“Advanced Investigative Journalism” – Ignacio Gómez and Ana Arana.",
-                        es: "“Periodismo de Investigación Avanzado” – Ignacio Gómez y Ana Arana."
-                    },
-                    {
-                        en: "La Paz, Bolivia, November 24-28, 1998.",
-                        es: "La Paz, Bolivia, 24-28 de noviembre de 1998."
-                    },
-                    {
-                        en: "“Measurement of Media Consumption as a Source of Business”–Bernardo Díaz Nosty La Paz, Bolivia, March 29, 1999.",
-                        es: "“Medición del Consumo de Medios como Fuente de Negocio”–Bernardo Díaz Nosty La Paz, Bolivia, 29 de marzo de 1999."
-                    }
-                ]
-            }
-        },
-        trainings: {
-            icon: <Learning />,
-            color: "#d74e09ad",
-            title: {
-                en: "Trainings",
-                es: "Capacitaciones"
-            },
-            cities: [
-                {
-                    en: "Santa Cruz",
-                    es: "Santa Cruz"
-                },
-                {
-                    en: "Oruro",
-                    es: "Oruro"
-                },
-                {
-                    en: "Cochabamba",
-                    es: "Cochabamba"
-                },
-                {
-                    en: "Chuquisaca",
-                    es: "Chuquisaca"
-                },
-                {
-                    en: "Potosí",
-                    es: "Potosí"
-                },
-                {
-                    en: "Tarija",
-                    es: "Tarija"
-                }
-            ]
-        },
         events: {
+            textColor: true,
             icon: <Community />,
-            color: "#1a659ea3",
+            color: "#B3FFDE",
             title: {
                 en: "Events",
                 es: "Eventos"
@@ -385,6 +199,197 @@ export const proyectosContent = {
                     }
                 ]
             },
-        }
+        },
+        projects: {
+            textColor: true,
+            icon: <PasteClipboard />,
+            color: "#50C878",
+            title: {
+                en: "Projects",
+                es: "Proyectos"
+            },
+            cities: [
+                "Santa Cruz",
+                "Oruro",
+                "Cochabamba",
+                "Chuquisaca",
+                "Potosí",
+                "Tarija",
+            ],
+            items: [
+                {
+                    en: "Soil recovery and conservation",
+                    es: "Recuperación y conservación del suelo"
+
+                },
+                {
+                    en: "Organic matter recovery",
+                    es: "Recuperación de materia orgánica"
+
+                },
+                {
+                    en: "Adoption of good practices for the efficient use of water",
+                    es: "Adopción de buenas prácticas para el uso eficiente del agua"
+
+                },
+                {
+                    en: "Adoption of productivity improvement",
+                    es: "Adopción de mejoras de productividad"
+
+                },
+                {
+                    en: "Technology transfer to increase production and good use of the soil",
+                    es: "Transferencia de tecnología para aumentar la producción y buen uso del suelo"
+
+                },
+                {
+                    en: "Territorial integration based on sustainable productive development",
+                    es: "Integración territorial basada en el desarrollo productivo sostenible"
+
+                },
+                {
+                    en: "Environmental impact remediation, Warnes Santa Cruz highway",
+                    es: "Remediación de impacto ambiental, carretera Warnes Santa Cruz"
+
+                },
+                {
+                    en: "New technology enhancers",
+                    es: "Nuevos potenciadores de tecnología"
+
+                },
+                {
+                    en: "Communication campaign developed by the coordination secretariat of the national council against illicit drug trafficking (SC-CONALTID) 'decides to prevent'",
+                    es: "Campaña de comunicación desarrollada por la secretaría de coordinación del consejo nacional contra el tráfico ilícito de drogas (SC-CONALTID) 'decide prevenir'"
+
+                }
+            ],
+        },
+        studies: {
+            textColor: false,
+            icon: <BookStack />,
+            color: "#388C68",
+            title: {
+                en: "Studies",
+                es: "Estudios"
+            },
+            items: [
+                {
+                    en: "Study and implementation for the transfer of technology to increase production and good use of the soil.",
+                    es: "Estudio e implementación para la transferencia de tecnología para aumentar la producción y buen uso del suelo."
+                },
+                {
+                    en: "Study for national connectivity.",
+                    es: "Estudio para la conectividad nacional."
+                },
+                {
+                    en: "Environmental impact study, Warnes Santa Cruz highway.",
+                    es: "Estudio de impacto ambiental, carretera Warnes Santa Cruz."
+                },
+                {
+                    en: "I study local development processes of shared responsibility.",
+                    es: "Estudio de procesos de desarrollo local de responsabilidad compartida."
+                },
+                {
+                    en: "Finlades Pedagogical System Study.",
+                    es: "Estudio del Sistema Pedagógico Finlades."
+                },
+                {
+                    en: "I study proposals for the new school curriculum in centers of high population density.",
+                    es: "Estudio de propuestas para el nuevo currículo escolar en centros de alta densidad poblacional."
+                },
+                {
+                    en: "Study Proposal for new university careers.",
+                    es: "Estudio Propuesta de nuevas carreras universitarias."
+                },
+            ],
+        },
+        trainings: {
+            textColor: false,
+            icon: <Learning />,
+            color: "#006D5B",
+            title: {
+                en: "Trainings",
+                es: "Capacitaciones"
+            },
+            cities: [
+                {
+                    en: "Santa Cruz",
+                    es: "Santa Cruz"
+                },
+                {
+                    en: "Oruro",
+                    es: "Oruro"
+                },
+                {
+                    en: "Cochabamba",
+                    es: "Cochabamba"
+                },
+                {
+                    en: "Chuquisaca",
+                    es: "Chuquisaca"
+                },
+                {
+                    en: "Potosí",
+                    es: "Potosí"
+                },
+                {
+                    en: "Tarija",
+                    es: "Tarija"
+                }
+            ]
+        },
+        workshops: {
+            textColor: true,
+            icon: <DesignPencil />,
+            color: "#006D66",
+            title: {
+                en: "Workshops",
+                es: "Talleres"
+            },
+            carried: {
+                title: {
+                    en: "Workshops carried out FLADES in conjunction with CICES",
+                    es: "Talleres realizados de FLADES en conjunto con CICES"
+                },
+                workshops: [
+                    {
+                        en: "“The Journalistic Genres” – Miguel Ángel Bastenier",
+                        es: "“Los Géneros Periodísticos” – Miguel Ángel Bastenier"
+                    }
+                ]
+            },
+            held: {
+                title: {
+                    en: "Workshops held FLADES with the Foundation for a New Ibero-American Journalism",
+                    es: "Talleres realizados de FLADES con la Fundación para un Nuevo Periodismo Iberoamericano"
+                },
+                workshops: [
+                    {
+                        en: "“La Paz, Bolivia, July 1-4, 1998",
+                        es: "“La Paz, Bolivia, 1-4 de julio de 1998”"
+                    },
+                    {
+                        en: "“Journalistic Ethics” – Javier Darío Restrepo",
+                        es: "“Ética Periodística” – Javier Darío Restrepo"
+                    },
+                    {
+                        en: "Santa Cruz de la Sierra, Bolivia, November 16 and 17, 1998.",
+                        es: "Santa Cruz de la Sierra, Bolivia, 16 y 17 de noviembre de 1998."
+                    },
+                    {
+                        en: "“Advanced Investigative Journalism” – Ignacio Gómez and Ana Arana.",
+                        es: "“Periodismo de Investigación Avanzado” – Ignacio Gómez y Ana Arana."
+                    },
+                    {
+                        en: "La Paz, Bolivia, November 24-28, 1998.",
+                        es: "La Paz, Bolivia, 24-28 de noviembre de 1998."
+                    },
+                    {
+                        en: "“Measurement of Media Consumption as a Source of Business”–Bernardo Díaz Nosty La Paz, Bolivia, March 29, 1999.",
+                        es: "“Medición del Consumo de Medios como Fuente de Negocio”–Bernardo Díaz Nosty La Paz, Bolivia, 29 de marzo de 1999."
+                    }
+                ]
+            }
+        },
     },
 }
