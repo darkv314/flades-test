@@ -25,7 +25,7 @@ function Cafe() {
           content.map((item, index) => {
             return <ContentSection wave={index !== 0} color={item.color} key={`section-cafe${index}`} start={index} contents={[{
               content: item[language],
-              imgSrc: cafeSlider[index].src,
+              imgSrc: item.img,
               imgAlt: cafeSlider[index].alt
             }]} />
           })

@@ -7,10 +7,14 @@ import orquesta from "../assets/chiquitania/orquesta.jpg"
 import panel from "../assets/chiquitania/panel.jpg"
 import paty from "../assets/chiquitania/paty.jpg"
 import vainilla from "../assets/chiquitania/vainilla.jpg"
-import nosotros2 from "../assets/nosotros/nosotros2.jpg"
 import bancoFie from "../assets/inicio/brands/bancoFie.png";
 import giz from "../assets/inicio/brands/giz.png";
 import solydes from "../assets/inicio/brands/solydes.png";
+import tallado from "../assets/chiquitania/tallado.jpg";
+import usoAgua from "../assets/chiquitania/usoAgua.jpg";
+import desarrollo from "../assets/chiquitania/desarrollo.jpg";
+import capacitacion from "../assets/chiquitania/capacitacion.jpg";
+import hidroponia from "../assets/chiquitania/hidroponia.jpeg";
 
 export const chiquitaniaBrands = [
     {
@@ -133,8 +137,8 @@ export const chuquitaniaContent = {
                         es: "El Tallado en Madera"
                     },
                     img: {
-                        src: paty,
-                        alt: "Paty"
+                        src: tallado,
+                        alt: "Tallado"
                     },
                     content: {
                         en: "Traditionally woodcarving was part of the Jesuit teaching, from the pillars of the churches, the furniture, clerical ornaments and the great images of saints, which to this day embellish the churches. These carvings, mostly with religious motifs, as the teaching progressed took on indigenous aesthetic aspects, so they did not fully respond to the European canons of the time, but rather the proportions, faces, details and zoomorphic figures were extracted from the environment, taking its native fort. Preserving this tradition is vital, woodcarving, artisanal and artistic, is not only a form of cultural expression, but also means a trade that can help residents generate income for themselves, their families and communities.",
@@ -157,8 +161,8 @@ export const chuquitaniaContent = {
                         es: "Desarrollo Productivo Comunal"
                     },
                     img: {
-                        src: panel,
-                        alt: "Panel"
+                        src: desarrollo,
+                        alt: "Desarrollo Productivo Comunal"
                     },
                     content: {
                         en: "A participatory agroforestry development model is proposed with the communities, strengthening their family and community economy, based on productive innovation with new highly productive and profitable crops. The CIC will provide training and support in the implementation of these new crops, providing technical assistance for the efficient management of soil and water natural resources, the creation of community production units with a business approach, based on the collaborative construction of a chain of productive value with corporate social responsibility. With this, it is sought that indigenous communities and family farmers produce with the certainty that their products have access to safe and supportive markets, committed to sustainable development and the local economy. Through these community production units, support will be promoted for the art and music schools that exist in the area and that are the articulating axis to achieve comprehensive and sustainable development for all the populations of the Velasco Province.",
@@ -186,7 +190,7 @@ export const chuquitaniaContent = {
                         es: "Capacitación y Asistencia Técnica"
                     },
                     img: {
-                        src: panel,
+                        src: capacitacion,
                         alt: "Capacitación"
                     },
                     content: {
@@ -215,8 +219,8 @@ export const chuquitaniaContent = {
                         es: "Cultivos Hidropónicos"
                     },
                     img: {
-                        src: moringa,
-                        alt: "Moringa"
+                        src: hidroponia,
+                        alt: "Hidroponía"
                     },
                     content: {
                         en: "Another area that will be addressed is the implementation of resilient agricultural practices such as hydroponic production of vegetables in controlled environments (greenhouses), with the aim of seeking the sustainability of the food production systems available to the families of the municipality, in order to to improve the food insecurity and malnutrition of the local population, thus reducing hunger in the most vulnerable population (children, the elderly and women), in addition to generating complementary economic income so that women and young people of working age achieve their independence and freedom economy with decent work.",
@@ -266,8 +270,8 @@ export const chuquitaniaContent = {
                         es: "Uso Eficiente del Agua"
                     },
                     img: {
-                        src: nosotros2,
-                        alt: "Nosotros2"
+                        src: usoAgua,
+                        alt: "Uso Eficiente del Agua"
                     },
                     content: {
                         en: "Water is a scarce and vulnerable resource. Its protection involves promoting saving, limiting and subsequently suppressing irrational uses. FLADES will train and implement good practices in the use of this resource through controlled irrigation techniques, implementation of different collection and exploration methods, and technology transfer to the inhabitants of the region.",

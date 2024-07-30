@@ -68,7 +68,7 @@ export const cafeContent = {
         },
         {
             color: "#805d49",
-            img: cafe3,
+            img: cafe7,
             es: "Además de disfrutar de un café cultivado conscientemente, Vagante ofrece aventuras de canyonig que permiten a los visitantes explorar las espectaculares cascadas y ríos de la región. Equipados con la mejor tecnología de seguridad europea, los turistas pueden sumergirse en la belleza natural de los Yungas mientras participan en emocionantes descensos y travesías acuáticas. Esta experiencia no solo atrae a aventureros de todo el mundo, sino que también complementa la economía local, alineando la conservación del medio ambiente con el turismo sostenible.",
             en: "In addition to enjoying consciously grown coffee, Vagante offers canyonig adventures that allow visitors to explore the region's spectacular waterfalls and rivers. Equipped with the best European safety technology, tourists can immerse themselves in the natural beauty of the Yungas while participating in exciting descents and water crossings. This experience not only attracts adventurers from around the world, but also complements the local economy, aligning environmental conservation with sustainable tourism."
         },
