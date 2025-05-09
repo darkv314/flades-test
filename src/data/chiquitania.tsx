@@ -15,6 +15,7 @@ import usoAgua from "../assets/chiquitania/usoAgua.jpg";
 import desarrollo from "../assets/chiquitania/desarrollo.jpg";
 import capacitacion from "../assets/chiquitania/capacitacion.jpg";
 import hidroponia from "../assets/chiquitania/hidroponia.jpeg";
+import swisscontact from "../assets/inicio/brands/swisscontact.png";
 
 export const chiquitaniaBrands = [
     {
@@ -29,6 +30,10 @@ export const chiquitaniaBrands = [
         src: solydes,
         name: "Fundación Solydes",
     },
+    {
+        src: swisscontact,
+        name: "Swiss Contact",
+    }
 ]
 
 export const chiquitaniaSlider = [
