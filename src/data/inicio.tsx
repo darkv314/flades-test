@@ -5,6 +5,7 @@ import cni from "../assets/inicio/brands/cni.png";
 import pacto from "../assets/inicio/brands/pactoGlobal.png";
 import nosotros from "../assets/inicio/sections/nosotros.jpg";
 import uab from "../assets/inicio/brands/uab.png";
+import catalyste from "../assets/inicio/brands/catalyste.png";
 import { InfoSectionProps } from "../components/inicio/InfoSection";
 import { Facebook, Instagram, Linkedin } from "iconoir-react";
 import whatsapp from "../assets/inicio/icons/whatsapp.svg"
@@ -35,6 +36,10 @@ export const brands = [
         src: pacto,
         name: "Pacto Global Red Bolivia",
     },
+    {
+        src: catalyste,
+        name: "Catalyste",
+    }
 ];
 
 export const redesSociales = [
